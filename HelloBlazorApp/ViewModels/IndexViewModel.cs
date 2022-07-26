@@ -1,6 +1,6 @@
 using System.Drawing;
 
-namespace ChartJsSample.ViewModels;
+namespace HelloBlazorApp.ViewModels;
 
 public class IndexViewModel : NotificationObject
 {

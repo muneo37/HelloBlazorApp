@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace ChartJsSample
+namespace HelloBlazorApp
 {
     public class ChartItem
     {

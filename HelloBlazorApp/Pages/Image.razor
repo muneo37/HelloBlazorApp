@@ -1,4 +1,5 @@
 ﻿@page "/image"
+
 @inherits ViewComponentBase<IndexViewModel>
 
 <h3>Image</h3>
@@ -30,6 +31,8 @@
         <LineChart id="chart1" ItemsSource="@DataContext.ChartItems" />
     </div>
 </div>
+
+
 @code {
     private string? imageSource;
 

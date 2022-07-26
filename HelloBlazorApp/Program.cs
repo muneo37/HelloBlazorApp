@@ -1,4 +1,5 @@
 using HelloBlazorApp.Data;
+using HelloBlazorApp.ViewModels;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -9,6 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
+builder.Services.AddScoped<IndexViewModel>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

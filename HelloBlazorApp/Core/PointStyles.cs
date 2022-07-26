@@ -1,4 +1,4 @@
-namespace ChartJsSample
+namespace HelloBlazorApp
 {
     public enum PointStyles
     {

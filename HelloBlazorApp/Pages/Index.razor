@@ -1,9 +1,25 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@inherits ViewComponentBase<IndexViewModel>
 
-<h1>Hello, world!</h1>
+<PageTitle>@DataContext.PageTitle</PageTitle>
 
-Welcome to your new app.
+<div class="row">
+    <div class="col-2">
+        <InputButton Class="btn btn-primary" Command="@DataContext.CreateChartCommand">Create Chart!</InputButton>
+    </div>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div class="row my-4">
+    <div class="col">
+        <h3>グラフ 1</h3>
+        <LineChart id="chart1" ItemsSource="@DataContext.ChartItems" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <h3>グラフ 2</h3>
+        <LineChart id="chart2" ItemsSource="@DataContext.ChartItems2" />
+    </div>
+</div>

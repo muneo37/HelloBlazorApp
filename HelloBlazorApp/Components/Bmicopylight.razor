@@ -1,6 +1,9 @@
 ﻿<hr />
-<div style="text-align:right">Copyright 2022 by @name</div>
+<div style="text-align:right">Copyright @Year by @Name</div>
 @code {
-    private string name = "yusuke satou";
+    [Parameter]
+    public string Name{ get; set; }
+    [Parameter]
+    public int Year{ get; set; }
 
 }
